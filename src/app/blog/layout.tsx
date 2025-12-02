@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Blog | Student Jobs Rotterdam",
-  description: "Articles and tips for student jobs in Rotterdam.",
+  title: "Blog | Student Jobs Groningen",
+  description: "Articles and tips for student jobs in Groningen.",
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {

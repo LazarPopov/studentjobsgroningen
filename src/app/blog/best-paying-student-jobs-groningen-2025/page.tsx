@@ -1,4 +1,4 @@
-// src/app/guides/best-paying-student-jobs-rotterdam-2025/page.tsx
+// src/app/guides/best-paying-student-jobs-groningen-2025/page.tsx
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Image from "next/image";
@@ -7,40 +7,40 @@ import Link from "next/link";
 const PUBLISH_DATE = "2025-10-02";
 const MODIFIED_DATE = "2025-10-02";
 const CANONICAL =
-  "https://studentjobsrotterdam.nl/blog/best-paying-student-jobs-rotterdam-2025";
+  "https://studentjobsgroningen.nl/blog/best-paying-student-jobs-groningen-2025";
 const OG_IMAGE =
-  "https://studentjobsrotterdam.nl/blog/international-students-looking-for-English-speaking-jobs-near-Rotterdams-Erasmus-Bridge.jpg"; // place /public/guides/placeholder.jpg
+  "https://studentjobsgroningen.nl/blog/international-students-looking-for-English-speaking-jobs-near-Groningens-Erasmus-Bridge.jpg"; // place /public/guides/placeholder.jpg
 
 export const metadata: Metadata = {
   title:
-    "Best-Paying Student Jobs in Rotterdam (2025) — Shift Types, Industries & Certifications",
+    "Best-Paying Student Jobs in Groningen (2025) — Shift Types, Industries & Certifications",
   description:
-    "Discover the best-paying student jobs in Rotterdam for 2025: evening/weekend shifts, logistics, tutoring, events lead roles, and certifications like BHV, HACCP, VCA, forklift.",
+    "Discover the best-paying student jobs in Groningen for 2025: evening/weekend shifts, logistics, tutoring, events lead roles, and certifications like BHV, HACCP, VCA, forklift.",
   keywords: [
-    "best paying student jobs Rotterdam",
-    "high paying student jobs Rotterdam",
-    "student wage Rotterdam",
+    "best paying student jobs Groningen",
+    "high paying student jobs Groningen",
+    "student wage Groningen",
     "BHV HACCP VCA forklift certificate",
     "evening night weekend allowance Netherlands",
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Best-Paying Student Jobs in Rotterdam (2025)",
+    title: "Best-Paying Student Jobs in Groningen (2025)",
     description:
       "Shift types, industries, and certifications that add €€ to your hourly rate — with quick wins for students.",
     url: CANONICAL,
     type: "article",
     locale: "en_NL",
-    siteName: "Student Jobs Rotterdam",
+    siteName: "Student Jobs Groningen",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [{ url: OG_IMAGE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best-Paying Student Jobs in Rotterdam (2025)",
+    title: "Best-Paying Student Jobs in Groningen (2025)",
     description:
-      "Which student jobs pay the most in Rotterdam? Get the tactics, categories, and certs to boost your rate fast.",
+      "Which student jobs pay the most in Groningen? Get the tactics, categories, and certs to boost your rate fast.",
     images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
@@ -53,10 +53,10 @@ export default function BestPayingGuide() {
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Best-Paying Student Jobs in Rotterdam (2025)
+            Best-Paying Student Jobs in Groningen (2025)
           </h1>
           <p className="mt-3 text-sm text-slate-600">
-            By <span className="font-medium">Student Jobs Rotterdam</span> • Updated{" "}
+            By <span className="font-medium">Student Jobs Groningen</span> • Updated{" "}
             {new Date(MODIFIED_DATE).toLocaleDateString("en-NL", {
               year: "numeric",
               month: "long",
@@ -66,8 +66,8 @@ export default function BestPayingGuide() {
 
           <div className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
-              src="/blog/rotterdam-bridge-photo.png"
-              alt="rotterdam-bridge-photo"
+              src="/blog/groningen-bridge-photo.png"
+              alt="groningen-bridge-photo"
               width={1280}
               height={720}
               priority
@@ -262,7 +262,7 @@ export default function BestPayingGuide() {
             </div>
 
             <h2 id="faq">FAQ</h2>
-            <h3>Which student jobs pay the most in Rotterdam?</h3>
+            <h3>Which student jobs pay the most in Groningen?</h3>
             <p>
               Often tutoring, logistics evening/night shifts, event leads, and sales with commission. Skilled
               hospitality (barista/lead) also earns more than entry roles.
@@ -289,18 +289,18 @@ export default function BestPayingGuide() {
               "@context": "https://schema.org",
               "@type": "Article",
               headline:
-                "Best-Paying Student Jobs in Rotterdam (2025) — Shift Types, Industries & Certifications",
+                "Best-Paying Student Jobs in Groningen (2025) — Shift Types, Industries & Certifications",
               description:
-                "Shift types, industries, and certifications that add €€ to your hourly rate as a student in Rotterdam.",
+                "Shift types, industries, and certifications that add €€ to your hourly rate as a student in Groningen.",
               image: OG_IMAGE,
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Rotterdam",
-                url: "https://studentjobsrotterdam.nl/",
+                name: "Student Jobs Groningen",
+                url: "https://studentjobsgroningen.nl/",
               },
-              publisher: { "@type": "Organization", name: "Student Jobs Rotterdam" },
+              publisher: { "@type": "Organization", name: "Student Jobs Groningen" },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
             }),
           }}
@@ -312,11 +312,11 @@ export default function BestPayingGuide() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Guides", item: "https://studentjobsrotterdam.nl/blogs" },
+                { "@type": "ListItem", position: 1, name: "Guides", item: "https://studentjobsgroningen.nl/blogs" },
                 {
                   "@type": "ListItem",
                   position: 2,
-                  name: "Best-Paying Student Jobs in Rotterdam (2025)",
+                  name: "Best-Paying Student Jobs in Groningen (2025)",
                   item: CANONICAL,
                 },
               ],
@@ -332,7 +332,7 @@ export default function BestPayingGuide() {
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Which student jobs pay the most in Rotterdam?",
+                  name: "Which student jobs pay the most in Groningen?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
@@ -367,7 +367,7 @@ export default function BestPayingGuide() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "How to boost your student wage in Rotterdam in 2 weeks",
+              name: "How to boost your student wage in Groningen in 2 weeks",
               image: OG_IMAGE,
               totalTime: "P14D",
               supply: [

@@ -1,4 +1,4 @@
-// src/app/guides/student-jobs-rotterdam-complete-guide-2025/page.tsx
+// src/app/guides/student-jobs-groningen-complete-guide-2025/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,32 +6,32 @@ import Link from "next/link";
 const PUBLISH_DATE = "2025-10-02";
 const MODIFIED_DATE = "2025-10-02";
 const CANONICAL =
-  "https://studentjobsrotterdam.nl/blog/student-jobs-rotterdam-complete-guide-2025";
+  "https://studentjobsgroningen.nl/blog/student-jobs-groningen-complete-guide-2025";
 const OG_IMAGE =
-  "https://studentjobsrotterdam.nl/blog/international-students-looking-for-English-speaking-jobs-near-Rotterdams-Erasmus-Bridge.jpg"; // place /public/guides/placeholder.jpg
+  "https://studentjobsgroningen.nl/blog/international-students-looking-for-English-speaking-jobs-near-Groningens-Erasmus-Bridge.jpg"; // place /public/guides/placeholder.jpg
 
 export const metadata: Metadata = {
   title:
-    "Student Jobs in Rotterdam — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
+    "Student Jobs in Groningen — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
   description:
-    "A complete, practical guide for student jobs in Rotterdam: permits, contracts, pay, neighborhoods, CV templates, and where to find English-speaking roles fast.",
+    "A complete, practical guide for student jobs in Groningen: permits, contracts, pay, neighborhoods, CV templates, and where to find English-speaking roles fast.",
   keywords: [
-    "student jobs Rotterdam",
-    "English speaking jobs Rotterdam",
+    "student jobs Groningen",
+    "English speaking jobs Groningen",
     "student visa work Netherlands",
-    "part-time jobs Rotterdam students",
-    "Rotterdam wages students",
+    "part-time jobs Groningen students",
+    "Groningen wages students",
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Student Jobs in Rotterdam — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
+      "Student Jobs in Groningen — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
     description:
-      "Permits, contracts, pay ranges, neighborhoods, and step-by-step tactics to land a student job in Rotterdam.",
+      "Permits, contracts, pay ranges, neighborhoods, and step-by-step tactics to land a student job in Groningen.",
     url: CANONICAL,
     type: "article",
     locale: "en_NL",
-    siteName: "Student Jobs Rotterdam",
+    siteName: "Student Jobs Groningen",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [{ url: OG_IMAGE }],
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Student Jobs in Rotterdam — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
+      "Student Jobs in Groningen — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
     description:
-      "Everything you need to start working in Rotterdam as a student — fast and legally.",
+      "Everything you need to start working in Groningen as a student — fast and legally.",
     images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
@@ -54,10 +54,10 @@ export default function GuideComplete() {
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Student Jobs in Rotterdam — Complete Guide (2025)
+            Student Jobs in Groningen — Complete Guide (2025)
           </h1>
           <p className="mt-3 text-sm text-slate-600">
-            By <span className="font-medium">Student Jobs Rotterdam</span> • Updated{" "}
+            By <span className="font-medium">Student Jobs Groningen</span> • Updated{" "}
             {new Date(MODIFIED_DATE).toLocaleDateString("en-NL", {
               year: "numeric",
               month: "long",
@@ -67,8 +67,8 @@ export default function GuideComplete() {
 
           <div className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
-              src="/blog/rotterdam-bike.png"
-              alt="rotterdam-bike"
+              src="/blog/groningen-bike.png"
+              alt="groningen-bike"
               width={1280}
               height={720}
               priority
@@ -157,7 +157,7 @@ export default function GuideComplete() {
             </ul>
 
             <h2 id="neighborhoods">Neighborhoods & commute tips</h2>
-            <p>Rotterdam is spread out; quick commutes help you keep grades and income balanced:</p>
+            <p>Groningen is spread out; quick commutes help you keep grades and income balanced:</p>
             <ul>
               <li><strong>Centrum/Markthal</strong>: hospitality/retail density and festivals.</li>
               <li><strong>Kralingen</strong>: near campus; café and tutoring gigs.</li>
@@ -175,7 +175,7 @@ export default function GuideComplete() {
 
             <h2 id="where-to-look">Where to find jobs (fast)</h2>
             <ul>
-              <li><Link href="/jobs">Student Jobs Rotterdam — all jobs</Link></li>
+              <li><Link href="/jobs">Student Jobs Groningen — all jobs</Link></li>
               <li>
                 <Link href="/categories">Browse by category</Link> or <Link href="/jobs?english=true">English-friendly only</Link>.
               </li>
@@ -185,7 +185,7 @@ export default function GuideComplete() {
             <h2 id="cv-templates">CV & message templates</h2>
             <p>Paste this into your notes/cover field for quick applications:</p>
             <blockquote>
-              Hi! I’m a student in Rotterdam with availability on weekdays after 16:00 and weekends. I have
+              Hi! I’m a student in Groningen with availability on weekdays after 16:00 and weekends. I have
               customer-facing experience and can start immediately. CV attached. Thanks for your time!
             </blockquote>
             <p>
@@ -237,18 +237,18 @@ export default function GuideComplete() {
               "@context": "https://schema.org",
               "@type": "Article",
               headline:
-                "Student Jobs in Rotterdam — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
+                "Student Jobs in Groningen — Complete Guide (2025): Visas, Contracts, Wages, Neighborhoods",
               description:
-                "Permits, contracts, pay ranges, neighborhoods, and step-by-step tactics to land a student job in Rotterdam.",
+                "Permits, contracts, pay ranges, neighborhoods, and step-by-step tactics to land a student job in Groningen.",
               image: OG_IMAGE,
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Rotterdam",
-                url: "https://studentjobsrotterdam.nl/",
+                name: "Student Jobs Groningen",
+                url: "https://studentjobsgroningen.nl/",
               },
-              publisher: { "@type": "Organization", name: "Student Jobs Rotterdam" },
+              publisher: { "@type": "Organization", name: "Student Jobs Groningen" },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
             }),
           }}
@@ -260,8 +260,8 @@ export default function GuideComplete() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Blog", item: "https://studentjobsrotterdam.nl/blog" },
-                { "@type": "ListItem", position: 2, name: "Student Jobs in Rotterdam — Complete Guide (2025)", item: CANONICAL },
+                { "@type": "ListItem", position: 1, name: "Blog", item: "https://studentjobsgroningen.nl/blog" },
+                { "@type": "ListItem", position: 2, name: "Student Jobs in Groningen — Complete Guide (2025)", item: CANONICAL },
               ],
             }),
           }}
@@ -310,7 +310,7 @@ export default function GuideComplete() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "How to quickly land a student job in Rotterdam",
+              name: "How to quickly land a student job in Groningen",
               image: OG_IMAGE,
               totalTime: "PT2H",
               supply: [

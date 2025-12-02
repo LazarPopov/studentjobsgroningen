@@ -1,58 +1,58 @@
-// src/app/studenten-bijbaan-rotterdam/page.tsx
+// src/app/studenten-bijbaan-groningen/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 const PUBLISH_DATE = "2025-10-02";
 const MODIFIED_DATE = "2025-10-02";
-const CANONICAL = "https://studentjobsrotterdam.nl/studenten-bijbaan-rotterdam";
+const CANONICAL = "https://studentjobsgroningen.nl/studenten-bijbaan-groningen";
 const OG_IMAGE =
-  "https://studentjobsrotterdam.nl/blog/international-students-looking-for-English-speaking-jobs-near-Rotterdams-Erasmus-Bridge.jpg";
+  "https://studentjobsgroningen.nl/blog/international-students-looking-for-English-speaking-jobs-near-Groningens-Erasmus-Bridge.jpg";
 
 export const metadata: Metadata = {
-  title: "Studenten bijbaan Rotterdam (2025) – Goed betaald, Engelstalig & weekend",
+  title: "Studenten bijbaan Groningen (2025) – Goed betaald, Engelstalig & weekend",
   description:
-    "De ultieme gids voor een studenten bijbaan in Rotterdam: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
+    "De ultieme gids voor een studenten bijbaan in Groningen: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
   keywords: [
-    "studenten bijbaan rotterdam",
-    "bijbaan rotterdam",
-    "student jobs rotterdam",
-    "parttime vacatures rotterdam",
+    "studenten bijbaan groningen",
+    "bijbaan groningen",
+    "student jobs groningen",
+    "parttime vacatures groningen",
   ],
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Studenten bijbaan Rotterdam (2025) – Goed betaald, Engelstalig & weekend",
+    title: "Studenten bijbaan Groningen (2025) – Goed betaald, Engelstalig & weekend",
     description:
-      "Pillar-pagina met snelle filters (avond, weekend, Engels, zonder ervaring), uurloon per sector en live vacatures in Rotterdam.",
+      "Pillar-pagina met snelle filters (avond, weekend, Engels, zonder ervaring), uurloon per sector en live vacatures in Groningen.",
     url: CANONICAL,
     type: "article",
     locale: "nl_NL",
-    siteName: "Student Jobs Rotterdam",
+    siteName: "Student Jobs Groningen",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [{ url: OG_IMAGE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Studenten bijbaan Rotterdam (2025) – Goed betaald, Engelstalig & weekend",
+    title: "Studenten bijbaan Groningen (2025) – Goed betaald, Engelstalig & weekend",
     description:
-      "Waar vind je snel een bijbaan in Rotterdam? Bekijk filters, uurloon-tabellen en live vacatures.",
+      "Waar vind je snel een bijbaan in Groningen? Bekijk filters, uurloon-tabellen en live vacatures.",
     images: [OG_IMAGE],
   },
   robots: { index: true, follow: true },
 };
 
-export default function StudentenBijbaanRotterdam() {
+export default function StudentenBijbaanGroningen() {
   return (
     <section className="section">
       <div className="mx-auto max-w-6xl">
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Studenten bijbaan in Rotterdam: de ultieme gids (2025)
+            Studenten bijbaan in Groningen: de ultieme gids (2025)
           </h1>
           <p className="mt-3 text-sm text-slate-600">
-            Door <span className="font-medium">Student Jobs Rotterdam</span> • Bijgewerkt{" "}
+            Door <span className="font-medium">Student Jobs Groningen</span> • Bijgewerkt{" "}
             {new Date(MODIFIED_DATE).toLocaleDateString("nl-NL", {
               year: "numeric",
               month: "long",
@@ -63,7 +63,7 @@ export default function StudentenBijbaanRotterdam() {
           {/* Language toggle / A/B: Read in English */}
           <div className="mt-3">
             <Link
-              href="/blog/student-jobs-rotterdam-complete-guide-2025"
+              href="/blog/student-jobs-groningen-complete-guide-2025"
               className="inline-flex items-center rounded-full border px-3 py-1 text-xs md:text-sm underline hover:no-underline"
               aria-label="Read in English"
               data-ab="english-cta"
@@ -74,8 +74,8 @@ export default function StudentenBijbaanRotterdam() {
 
           <div className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
-              src="/blog/international-students-looking-for-English-speaking-jobs-near-Rotterdams-Erasmus-Bridge.jpg"
-              alt="Studenten bij de Erasmusbrug op zoek naar een (Engelstalige) bijbaan in Rotterdam"
+              src="/blog/international-students-looking-for-English-speaking-jobs-near-Groningens-Erasmus-Bridge.jpg"
+              alt="Studenten bij de Erasmusbrug op zoek naar een (Engelstalige) bijbaan in Groningen"
               width={1280}
               height={720}
               priority
@@ -85,20 +85,20 @@ export default function StudentenBijbaanRotterdam() {
 
           {/* Quick filters */}
           <div className="mt-6 flex flex-wrap gap-2">
-            <Link href="/jobs?city=Rotterdam&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Groningen&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
               Avond
             </Link>
-            <Link href="/jobs?city=Rotterdam&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Groningen&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
               Weekend
             </Link>
-            <Link href="/jobs?city=Rotterdam&noExperience=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Groningen&noExperience=true" className="rounded-full border px-3 py-1 text-sm underline">
               Zonder ervaring
             </Link>
-            <Link href="/jobs?city=Rotterdam&english=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Groningen&english=true" className="rounded-full border px-3 py-1 text-sm underline">
               Engels
             </Link>
-            <Link href="/jobs?city=Rotterdam" className="rounded-full border px-3 py-1 text-sm underline">
-              Alle vacatures (Rotterdam)
+            <Link href="/jobs?city=Groningen" className="rounded-full border px-3 py-1 text-sm underline">
+              Alle vacatures (Groningen)
             </Link>
           </div>
         </header>
@@ -125,7 +125,7 @@ export default function StudentenBijbaanRotterdam() {
               <li><a href="#contracten" className="underline">Contractvormen</a></li>
               <li><a href="#non-eu" className="underline">Non-EU studenten</a></li>
               <li><a href="#sollicitatie" className="underline">Sollicitatietips + gratis CV</a></li>
-              <li><a href="#live-vacatures" className="underline">Live vacatures (Rotterdam)</a></li>
+              <li><a href="#live-vacatures" className="underline">Live vacatures (Groningen)</a></li>
               <li><a href="#faq" className="underline">FAQ</a></li>
             </ul>
           </nav>
@@ -145,10 +145,10 @@ export default function StudentenBijbaanRotterdam() {
               [&_a]:underline hover:[&_a]:no-underline
             "
           >
-            <h2 id="waar-vinden">Waar vind je snel een bijbaan in Rotterdam (Kralingen/EUR, Centrum, Zuidplein, Waalhaven)</h2>
+            <h2 id="waar-vinden">Waar vind je snel een bijbaan in Groningen (Kralingen/EUR, Centrum, Zuidplein, Waalhaven)</h2>
             <p>
               De snelste matches ontstaan als je dichtbij inzetbaar bent. Begin met{" "}
-              <Link href="/jobs?city=Rotterdam">alle vacatures</Link> en filter op jouw wijk:
+              <Link href="/jobs?city=Groningen">alle vacatures</Link> en filter op jouw wijk:
             </p>
             <ul>
               <li><strong>Kralingen / EUR</strong>: cafés, bijles, campusbanen, barista.</li>
@@ -159,9 +159,9 @@ export default function StudentenBijbaanRotterdam() {
 
             <h2 id="engels">Engelstalige studentenbanen (hospitality, delivery/logistiek, retail, klantenservice)</h2>
             <p>
-              Rotterdam heeft veel <strong>Engelstalige teams</strong>, vooral in hospitality, bezorging/logistiek,
+              Groningen heeft veel <strong>Engelstalige teams</strong>, vooral in hospitality, bezorging/logistiek,
               internationale retail en support. Start hier:{" "}
-              <Link href="/jobs?city=Rotterdam&english=true">Engels-vriendelijke vacatures</Link>.
+              <Link href="/jobs?city=Groningen&english=true">Engels-vriendelijke vacatures</Link>.
             </p>
 
             <h2 id="roosters">Weekend & avond: roosters die naast college passen</h2>
@@ -273,8 +273,8 @@ export default function StudentenBijbaanRotterdam() {
             <div className="rounded-2xl border p-5 bg-white">
               <div className="font-semibold text-lg">Klaar om te starten?</div>
               <p className="mt-1">
-                Bekijk <Link href="/jobs?city=Rotterdam">alle vacatures (Rotterdam)</Link>,{" "}
-                <Link href="/jobs?city=Rotterdam&english=true">Engels-vriendelijk</Link> of{" "}
+                Bekijk <Link href="/jobs?city=Groningen">alle vacatures (Groningen)</Link>,{" "}
+                <Link href="/jobs?city=Groningen&english=true">Engels-vriendelijk</Link> of{" "}
                 <Link href="/categories">categorieën</Link>. Werkgever?{" "}
                 <Link href="/employers">Adverteer je vacature</Link>.
               </p>
@@ -285,15 +285,15 @@ export default function StudentenBijbaanRotterdam() {
 
             <h2 id="live-vacatures">Live vacatures (embed)</h2>
             <p className="text-sm text-slate-600">
-              Tip: filter op <Link href="/jobs?city=Rotterdam&evening=true">avond</Link>,{" "}
-              <Link href="/jobs?city=Rotterdam&weekend=true">weekend</Link>,{" "}
-              <Link href="/jobs?city=Rotterdam&noExperience=true">zonder ervaring</Link>,{" "}
-              <Link href="/jobs?city=Rotterdam&english=true">Engels</Link>.
+              Tip: filter op <Link href="/jobs?city=Groningen&evening=true">avond</Link>,{" "}
+              <Link href="/jobs?city=Groningen&weekend=true">weekend</Link>,{" "}
+              <Link href="/jobs?city=Groningen&noExperience=true">zonder ervaring</Link>,{" "}
+              <Link href="/jobs?city=Groningen&english=true">Engels</Link>.
             </p>
             <div className="rounded-2xl border bg-white p-4">
               {/* Als je een embed-modus hebt, kun je die route gebruiken; anders linkt dit blok door. */}
-              <Link href="/jobs?city=Rotterdam" className="underline">
-                Open live vacatures voor Rotterdam
+              <Link href="/jobs?city=Groningen" className="underline">
+                Open live vacatures voor Groningen
               </Link>
               <div className="mt-3 flex flex-wrap gap-2">
                 <Link href="/categories/hospitality" className="rounded-full border px-3 py-1 text-sm underline">
@@ -327,7 +327,7 @@ export default function StudentenBijbaanRotterdam() {
             <h3>Zijn er Engelstalige bijbanen?</h3>
             <p>
               Ja. Vooral in horeca, bezorging/logistiek, retail en klantenservice. Start bij{" "}
-              <Link href="/jobs?city=Rotterdam&english=true">Engels-vriendelijke vacatures</Link>.
+              <Link href="/jobs?city=Groningen&english=true">Engels-vriendelijke vacatures</Link>.
             </p>
 
             <h3>Wat verdient een student in 2025?</h3>
@@ -351,15 +351,15 @@ export default function StudentenBijbaanRotterdam() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "Studenten bijbaan Rotterdam (2025) – Goed betaald, Engelstalig & weekend",
+              headline: "Studenten bijbaan Groningen (2025) – Goed betaald, Engelstalig & weekend",
               description:
-                "Pillar-gids voor studenten bijbanen in Rotterdam met snelle filters, uurloon-tabellen, contractvormen en live vacatures.",
+                "Pillar-gids voor studenten bijbanen in Groningen met snelle filters, uurloon-tabellen, contractvormen en live vacatures.",
               image: OG_IMAGE,
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               inLanguage: "nl-NL",
-              author: { "@type": "Organization", name: "Student Jobs Rotterdam", url: "https://studentjobsrotterdam.nl/" },
-              publisher: { "@type": "Organization", name: "Student Jobs Rotterdam" },
+              author: { "@type": "Organization", name: "Student Jobs Groningen", url: "https://studentjobsgroningen.nl/" },
+              publisher: { "@type": "Organization", name: "Student Jobs Groningen" },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
             }),
           }}
@@ -371,8 +371,8 @@ export default function StudentenBijbaanRotterdam() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://studentjobsrotterdam.nl/" },
-                { "@type": "ListItem", position: 2, name: "Studenten bijbaan Rotterdam", item: CANONICAL },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://studentjobsgroningen.nl/" },
+                { "@type": "ListItem", position: 2, name: "Studenten bijbaan Groningen", item: CANONICAL },
               ],
             }),
           }}

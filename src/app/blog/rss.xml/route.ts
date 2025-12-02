@@ -1,10 +1,10 @@
 // src/app/blog/rss.xml/route.ts
 import { NextResponse } from "next/server";
-const site = "https://studentjobsrotterdam.nl";
+const site = "https://studentjobsgroningen.nl";
 const posts = [
-  { slug: "english-speaking-student-jobs-rotterdam", title: "English-Speaking Student Jobs in Rotterdam (2025)" },
-  { slug: "student-jobs-rotterdam-complete-guide-2025", title: "Student Jobs in Rotterdam — Complete Guide (2025)" },
-  { slug: "best-paying-student-jobs-rotterdam-2025", title: "Best-Paying Student Jobs in Rotterdam (2025)" },
+  { slug: "english-speaking-student-jobs-groningen", title: "English-Speaking Student Jobs in Groningen (2025)" },
+  { slug: "student-jobs-groningen-complete-guide-2025", title: "Student Jobs in Groningen — Complete Guide (2025)" },
+  { slug: "best-paying-student-jobs-groningen-2025", title: "Best-Paying Student Jobs in Groningen (2025)" },
 ];
 export async function GET() {
   const items = posts.map(p => `
@@ -15,9 +15,9 @@ export async function GET() {
     </item>`).join("");
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
   <rss version="2.0"><channel>
-    <title>Student Jobs Rotterdam — Blog</title>
+    <title>Student Jobs Groningen — Blog</title>
     <link>${site}/blog</link>
-    <description>Guides for student jobs in Rotterdam</description>
+    <description>Guides for student jobs in Groningen</description>
     ${items}
   </channel></rss>`;
   return new NextResponse(xml, { headers: { "Content-Type": "application/xml" } });
